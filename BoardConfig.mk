@@ -92,9 +92,9 @@ TARGET_KERNEL_SOURCE := kernel/motorola/sm6150
 TARGET_KERNEL_CONFIG := vendor/odessa_defconfig
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz
-TARGET_PREBUILT_DTB := $(PLATFORM_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(PLATFORM_PATH)/prebuilt/Image.gz
-BOARD_PREBUILT_DTBOIMAGE := $(PLATFORM_PATH)/prebuilt/dtbo.img
+TARGET_PREBUILT_DTB := device/motorola/odessa/prebuilt/dtb.img
+TARGET_PREBUILT_KERNEL := device/motorola/odessa/prebuilt/Image.gz
+BOARD_PREBUILT_DTBOIMAGE := device/motorola/odessa/prebuilt/dtbo.img
 
 TARGET_KERNEL_VERSION := 4.14
 TARGET_KERNEL_ARCH := arm64
