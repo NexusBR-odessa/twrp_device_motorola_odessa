@@ -234,3 +234,6 @@ PB_ENABLE_USB_STORAGE := true
 PB_DISABLE_MTP := false
 PB_NO_SAR_AUTODETECT := true
 PB_TORCH_PATH := "/sys/class/leds/torch-light0/brightness"
+
+# Allow building recovery with APEX libraries found in system image (Android 10+)
+BUILD_BROKEN_APEX_LIBS := true
