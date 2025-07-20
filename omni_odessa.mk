@@ -20,12 +20,14 @@ PRODUCT_RELEASE_NAME := odessa
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/pb/config/common.mk)
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := odessa
-PRODUCT_NAME := omni_$(PRODUCT_DEVICE)
+PRODUCT_NAME := omni_odessa
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(9) plus
 PRODUCT_MANUFACTURER := motorola
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/$(PRODUCT_BRAND)/$(PRODUCT_DEVICE)/device.mk)
+$(call inherit-product, device/motorola/odessa/device.mk)
